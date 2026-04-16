@@ -1,7 +1,153 @@
-div {
-    width: 300px;
+*{
+    margin:0;
 }
 
-.caca {
-    width: 500px;
+div {
+    width: auto;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: lightgray;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-palette-values --TitleColor {
+    font-family: "Nabla";
+    override-colors: 0 #000, 1 #000, 6 #000, 7 #000, 8 #000, 9 #000, 5 #000, 3 #000;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: "Nabla", sans-serif;
+    font-weight: 400;
+    font-variation-settings: "EDPT" 500, "EHLT" 3000;
+    font-palette: --TitleColor;
+}
+
+h2 {
+    font-size:60;
+    font-family: "Iceberg", sans-serif;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-btns {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container {
+    display: flex;
+    gap: 600px;
+}
+
+.nav-btns button {
+    width: 100px;
+}
+
+#nav-container {
+    border-bottom: 4px solid;
+}
+
+.details-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.thumbnail-images {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: block;
+}
+
+.thumbnail {
+    max-width: 300px;
+    max-height: 155px;
+}
+
+.classics{
+    display: flex;
+    gap: 30px;
+}
+
+.featured {
+    gap: 20px;
+    display: flex;
+} 
+
+.flex-package {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icons {
+    aspect-ratio: 1/1;
+    object-fit: block;
+    max-width: 65px;
+    max-height: 65px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.details-flex-items {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+section {
+    border-bottom: 5px solid black;
+    padding:20px;
+}
+
+.footer-position {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+    text-align: center;
 }
